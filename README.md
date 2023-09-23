@@ -198,6 +198,7 @@ We can see a list of all the Terrform commands by simply typing `terraform`
 
 At the start of a new terraform project we will run `terraform init` to download the binaries for the terraform providers that we'll use in this project.
 
+![terraform init](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/f56yxqpl94saopgc3noj.png)
 #### Terraform Plan
 
 `terraform plan`
@@ -205,6 +206,12 @@ At the start of a new terraform project we will run `terraform init` to download
 This will generate out a changeset, about the state of our infrastructure and what will be changed.
 
 We can output this changeset ie. "plan" to be passed to an apply, but often you can just ignore outputting.
+
+
+
+![terraform plan](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2mc1znx2i9547y1jxcpi.png)
+
+
 
 #### Terraform Apply
 
@@ -214,13 +221,26 @@ This will run a plan and pass the changeset to be execute by terraform. Apply sh
 
 If we want to automatically approve an apply we can provide the auto approve flag eg. `terraform apply --auto-approve`
 
-### Terraform Lock Files
+![terraform apply](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r390ts59yffda1zwyy3g.png)
+
+
+#### Terraform Destroy
+
+`terraform destroy`
+This will destroy resources.
+
+You can alos use the auto approve flag to skip the approve prompt eg. `terraform destroy --auto-approve`
+
+![terraform destroy](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mjw34cbwscv3xtjdiphl.png)
+
+
+#### Terraform Lock Files
 
 `.terraform.lock.hcl` contains the locked versioning for the providers or modulues that should be used with this project.
 
 The Terraform Lock File **should be committed** to your Version Control System (VSC) eg. Github
 
-### Terraform State Files
+#### Terraform State Files
 
 `.terraform.tfstate` contain information about the current state of your infrastructure.
 
@@ -232,6 +252,6 @@ If you lose this file, you lose knowning the state of your infrastructure.
 
 `.terraform.tfstate.backup` is the previous state file state.
 
-### Terraform Directory
+#### Terraform Directory
 
 `.terraform` directory contains binaries of terraform providers.
