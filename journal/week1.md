@@ -207,6 +207,12 @@ https://developer.hashicorp.com/terraform/language/resources/terraform-data
 ![invalidation deploy](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oycx4dc01b9os1421p2t.png)
 
 
+
+
+![cloudfront url](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4k7mmjjrsqq3g0x9k0gz.png)
+![cloudfront assets change](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9zy0cqfo3ch2zslm7ukf.png)
+![cloudfront assets deployed](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ltssnrkax3rydkcyms4d.png)
+
 ## Provisioners
 
 Provisioners allow you to execute commands on compute instances eg. a AWS CLI command.
