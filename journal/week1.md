@@ -202,6 +202,11 @@ Plain data values such as Local Values and Input Variables don't have any side-e
 
 https://developer.hashicorp.com/terraform/language/resources/terraform-data
 
+![invalidation plan](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ca3qscyo6fn0n70l7rd6.png)
+![invalidation approve](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4m3out61o2ncs0ch3f74.png)
+![invalidation deploy](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oycx4dc01b9os1421p2t.png)
+
+
 ## Provisioners
 
 Provisioners allow you to execute commands on compute instances eg. a AWS CLI command.
@@ -249,3 +254,17 @@ resource "aws_instance" "web" {
 }
 ```
 https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec
+
+
+
+## For Each Expressions
+
+For each allows us to enumerate over complex data types
+
+```sh
+[for s in var.list : upper(s)]
+```
+
+This is mostly useful when you are creating multiples of a cloud resource and you want to reduce the amount of repetitive terraform code.
+
+[For Each Expressions](https://developer.hashicorp.com/terraform/language/expressions/for)
