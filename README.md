@@ -229,7 +229,7 @@ If we want to automatically approve an apply we can provide the auto approve fla
 `terraform destroy`
 This will destroy resources.
 
-You can alos use the auto approve flag to skip the approve prompt eg. `terraform destroy --auto-approve`
+You can also use the auto approve flag to skip the approve prompt eg. `terraform destroy --auto-approve`
 
 ![terraform destroy](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mjw34cbwscv3xtjdiphl.png)
 
@@ -255,3 +255,49 @@ If you lose this file, you lose knowning the state of your infrastructure.
 #### Terraform Directory
 
 `.terraform` directory contains binaries of terraform providers.
+
+## Issues with Terraform Cloud Login and Gitpod Workspace
+
+When attempting to run `terraform login` it will launch bash a wiswig view to generate a token. However it does not work expected in Gitpod VsCode in the browser.
+
+![tfrc login](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/54q8tle8byhdmkbby2du.png)
+
+The workaround is manually generate a token in Terraform Cloud
+
+```
+https://app.terraform.io/app/settings/tokens?source=terraform-login
+```
+
+Then create open the file manually here:
+
+```sh
+touch /home/gitpod/.terraform.d/credentials.tfrc.json
+open /home/gitpod/.terraform.d/credentials.tfrc.json
+```
+
+Provide the following code (replace your token in the file):
+
+```json
+{
+  "credentials": {
+    "app.terraform.io": {
+      "token": "YOUR-TERRAFORM-CLOUD-TOKEN"
+    }
+  }
+}
+```
+
+
+![tfrc login token](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/12ryvx9h3oyqajpiocst.png)
+
+
+![tfrc init](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aioulonuyjwcdme8gaji.png)
+## Terraform remove environment variables
+
+![tfrc env](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6pj41tv303pfy2p1iq1v.png)
+
+![tfrc resources](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qthz8l5i6f9klz29akpr.png)
+![tfrc output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0309u6dczk11v2wjb0c0.png)
+
+
+![tfrc delete](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/92rdiyxedhux6q79woj2.png)
