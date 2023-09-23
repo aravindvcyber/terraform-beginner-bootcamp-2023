@@ -2,5 +2,5 @@ user_uuid="db8fc491-7712-4149-b2c2-19a84f7c3cc6"
 bucket_name="ivcj9ect1ex2hk158j7uozqdfbdj9f2l"
 index_html_filepath="public/index.html"
 error_html_filepath="public/error.html"
-assets_path="public/assets"
+assets_path="public/assets/"
 content_version=1
