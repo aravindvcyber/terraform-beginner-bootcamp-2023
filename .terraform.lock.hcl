@@ -1,6 +1,14 @@
 # This file is maintained automatically by "terraform init".
 # Manual edits may be lost in future updates.
 
+provider "local.providers/local/terratowns" {
+  version     = "1.0.0"
+  constraints = "1.0.0"
+  hashes = [
+    "h1:h8BO1FP5Q/dtJb5Nkjeg1FIZZ0GiCQ4LUQ2IMEfCTwg=",
+  ]
+}
+
 provider "registry.terraform.io/hashicorp/aws" {
   version     = "5.16.2"
   constraints = "5.16.2"
