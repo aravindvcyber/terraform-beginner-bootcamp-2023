@@ -73,11 +73,11 @@ class TerraTownsMockServer < Sinatra::Base
 
   # return a harcoded access token
   def x_access_code
-    return '9b49b3fb-b8e9-483c-b703-97ba88eef8e0'
+    return ENV['TF_VAR_terratowns_access_token']
   end
 
   def x_user_uuid
-    return 'e328f4ab-b99f-421c-84c9-4ccea042c7d1'
+    return ENV['TF_VAR_teacherseat_user_uuid']
   end
 
   def find_user_by_bearer_token
@@ -92,6 +92,7 @@ class TerraTownsMockServer < Sinatra::Base
     # if we cant find it than return an error or if it doesn't match
     # code = access_code = token
     code = auth_header.split("Bearer ")[1]
+    puts code
     if code != x_access_code
       error 401, "a1001 Failed to authenicate, bearer token invalid and/or teacherseat_user_uuid invalid"
     end

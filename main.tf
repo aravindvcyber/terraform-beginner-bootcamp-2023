@@ -13,12 +13,21 @@ terraform {
   #    name = "terra-house-1"
   #  }
   #}
-  cloud {
-    organization = "ExploringServerless"
-    workspaces {
-      name = "terraform-house"
-    }
+  # backend "remote" {
+  # organization = "ExploringServerless"
+  #  workspaces {
+  #    name = "terraform-house"
+  #  }
+  # }
+  backend "local" {
+
   }
+  # cloud {
+  #   organization = "ExploringServerless"
+  #   workspaces {
+  #     name = "terraform-house"
+  #   }
+  # }
 }
 
 provider "terratowns" {
