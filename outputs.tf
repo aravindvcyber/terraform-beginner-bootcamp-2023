@@ -1,14 +1,29 @@
-output "bucket_name" {
+output "arcanum_bucket_name" {
   description = "Bucket name for our static website hosting"
-  value = module.terrahouse_aws.bucket_name
+  value = module.home_arcanum_hosting.bucket_name
 }
 
-output "s3_website_endpoint" {
+output "arcanum_s3_website_endpoint" {
   description = "S3 Static Website hosting endpoint"
-  value = module.terrahouse_aws.website_endpoint
+  value = module.home_arcanum_hosting.website_endpoint
 }
 
-output "cloudfront_url" {
+output "arcanum_cloudfront_url" {
   description = "The CloudFront Distribution Domain Name"
-  value = module.terrahouse_aws.cloudfront_url
+  value = module.home_arcanum_hosting.domain_name
+}
+
+output "payday_bucket_name" {
+  description = "Bucket name for our static website hosting"
+  value = module.home_payday_hosting.bucket_name
+}
+
+output "payday_s3_website_endpoint" {
+  description = "S3 Static Website hosting endpoint"
+  value = module.home_payday_hosting.website_endpoint
+}
+
+output "payday_cloudfront_url" {
+  description = "The CloudFront Distribution Domain Name"
+  value = module.home_payday_hosting.domain_name
 }
