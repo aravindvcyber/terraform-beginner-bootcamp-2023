@@ -33,7 +33,9 @@ class Home
     'cooker-cove',
     'video-valley',
     'the-nomad-pad',
-    'gamers-grotto'
+    'gamers-grotto',
+    'serenity-ville',
+    'harmony-hills',
   ] }
   # visible to all users
   validates :name, presence: true
