@@ -7,6 +7,10 @@
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             text-align: center;
+            animation: fadeIn 1.5s ease;
+        }
+        .img {
+        
         }
 
         .recipe-card {
@@ -33,7 +37,7 @@
         .ingredients-table td {
             padding: 8px;
             text-align: center;
-            color: #99ff99;
+            color: #ffffff;
         }
 
         .ingredients-table th {
@@ -58,27 +62,129 @@
             color: #ff5733;
         }
 
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
         .toast-image {
             display: block;
             margin: 20px auto;
             max-width: 100%;
             border: 2px solid #4caf50;
             border-radius: 5px;
+            animation: bounceImage 2s infinite;
+        }
+        .toast-image-top {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border: 2px solid #4caf50;
+            border-radius: 5px;
+            animation: bounceImageX 2s infinite;
+        }
+
+        @keyframes bounceImage {
+            0%, 100% {
+                transform: translateY(0); /* Start and end with no vertical translation */
+            }
+            50% {
+                transform: translateY(-20px); /* Bounce upward at the middle of the animation */
+            }
+        }
+        @keyframes bounceImageX {
+            0%, 100% {
+                transform: translateX(0); /* Start and end with no vertical translation */
+            }
+            50% {
+                transform: translateX(-20px); /* Bounce upward at the middle of the animation */
+            }
+        }
+        hr {
+        color: #ff0000; /* Red color */  /* Adjust the height (thickness) */
+    }
+
+    .navigation-menu {
+        background-color: #666; /* Background color for the navigation bar */
+    }
+
+    .navigation-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation-menu ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .navigation-menu a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .navigation-menu a:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+            .recipe-card {
+                padding: 10px;
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            .ingredients-table th,
+            .ingredients-table td {
+                padding: 5px;
+                font-size: 14px;
+            }
+
+            .instruction-step p {
+                font-size: 14px;
+            }
+
+            .toast-image,
+            .toast-image-top {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 
 <body background="assets/cutlery.jpg">
     <div class="recipe-card" background="assets/paper.jpg">
-      <h1 class="recipe-title">Classic Bread Omelette Recipe</h1>
+       
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#ingredients">Ingredients</a></li>
+                    <li><a href="#instructions">Instructions</a></li>
+                    <li><a href="#serve">Serve</a></li>
+                </ul>
+            </nav>
+      <h1 id="summary" class="recipe-title">Classic Bread Omelette Recipe</h1>
         
       <!-- Summary -->
-      <p class="recipe-summary">
+      <p class="recipe-summary" >
           The Classic Bread Omelette is a simple and satisfying breakfast or snack option that combines the richness of an omelette with the delightful crunch of toasted bread. In this recipe, two slices of your preferred bread are carefully prepared, allowing you to choose whether to keep the crust or go for a crustless option. The bread is then lightly toasted to a beautiful golden brown, enhancing its flavor and texture.
       </p>
 
-        <h3 >Ingredients:</h3>
-        <table class="ingredients-table">
+      <img class="toast-image-top" src="assets/omlette.jpg" alt="omlette" width="600px" height="300">
+
+      <hr>
+
+        <h2 id="ingredients">Ingredients:</h3>
+        <table  class="ingredients-table">
           <tr>
               <th>Ingredient</th>
               <th>Quantity</th>
@@ -135,9 +241,10 @@
               <td><img src="assets/fresh-cilantro-or-parsley.jpg" alt="fresh-cilantro-or-parsley" width="200px" height="100"></td>
           </tr>
       </table>
+      <hr>
 
-        <h3>Instructions:</h3>
-        <div class="instructions">
+        <h3 id="instructions">Instructions:</h3>
+        <div class="instructions" >
             <!-- Previous instruction steps -->
 
             <div class="instruction-step">
@@ -166,7 +273,9 @@
             </div>
         </div>
 
-        <h3>Serve:</h3>
+        <hr>
+
+        <h3 id="serve">Serve:</h3>
         <p>Carefully fold the omelette in half with the bread inside. Garnish with fresh cilantro or parsley.</p>
         <img class="toast-image" src="assets/omlette.jpg" alt="omlette" width="600px" height="300">
     </div>
