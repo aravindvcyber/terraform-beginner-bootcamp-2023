@@ -4,7 +4,7 @@
 
 ## Architecture Link:
 
-![Lucid Architecture Link](https://lucid.app/lucidchart/e3f15b1a-2211-4ddb-8c95-f144c2504db4/edit?invitationId=inv_0873b3c6-c652-463f-9f2b-fa0f1b420823&page=0_0#)
+[Lucid Architecture Link](https://lucid.app/lucidchart/e3f15b1a-2211-4ddb-8c95-f144c2504db4/edit?invitationId=inv_0873b3c6-c652-463f-9f2b-fa0f1b420823&page=0_0#)
 
 ## Weekly Journals
 - [Week 0 Journal](journal/week0.md)
