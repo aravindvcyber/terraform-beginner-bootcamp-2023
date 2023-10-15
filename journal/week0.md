@@ -1,5 +1,8 @@
 # Terraform Beginner Bootcamp 2023 - Week 0 
 
+![week-0](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7q2yzw8s0kozixw74icu.png)
+
+
 - [Terraform Beginner Bootcamp 2023 - Week 0](#terraform-beginner-bootcamp-2023---week-0)
   - [Semantic Versioning :rocket:](#semantic-versioning-rocket)
   - [Install the Terraform CLI](#install-the-terraform-cli)

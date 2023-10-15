@@ -1,5 +1,8 @@
 # Terraform Beginner Bootcamp 2023 - Week 3
 
+
+![provider request](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c43ba0sr51ksvto7gber.png)
+![terratowns provider](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k7tzq0dztj3d92ej85b8.png)
 ## Final Submission
 
 ### Classic Bread Omelette receipe
