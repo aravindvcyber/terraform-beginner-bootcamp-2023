@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .recipe-card {
+          background-image: url('assets/paper.jpg'); /* Replace 'your-image-url.jpg' with the URL of your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Text color on the card */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .ingredients-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+
+        }
+
+        .ingredients-table th,
+        .ingredients-table td {
+            padding: 8px;
+            text-align: center;
+            color: #99ff99;
+        }
+
+        .ingredients-table th {
+            background-color: #0000ff;
+        }
+
+        .instructions {
+            margin-top: 10px;
+        }
+
+        .instruction-step {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .instruction-step p {
+            font-size: 16px;
+            color: #007700;
+        }
+
+        .instruction-step strong {
+            color: #ff5733;
+        }
+
+        .toast-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border: 2px solid #4caf50;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body background="assets/cutlery.jpg">
+    <div class="recipe-card" background="assets/paper.jpg">
+      <h1 class="recipe-title">Classic Bread Omelette Recipe</h1>
+        
+      <!-- Summary -->
+      <p class="recipe-summary">
+          The Classic Bread Omelette is a simple and satisfying breakfast or snack option that combines the richness of an omelette with the delightful crunch of toasted bread. In this recipe, two slices of your preferred bread are carefully prepared, allowing you to choose whether to keep the crust or go for a crustless option. The bread is then lightly toasted to a beautiful golden brown, enhancing its flavor and texture.
+      </p>
+
+        <h3 >Ingredients:</h3>
+        <table class="ingredients-table">
+          <tr>
+              <th>Ingredient</th>
+              <th>Quantity</th>
+              <th>Image</th>
+          </tr>
+          <tr>
+              <td>Bread slices</td>
+              <td>2</td>
+              <td><img src="assets/bread-slices.jpg" alt="bread-slices" width="200px" height="100"></td>
+          </tr>
+          <tr>
+              <td>Eggs</td>
+              <td>2</td>
+              <td><img src="assets/eggs.jpg" alt="eggs" width="200px" height="100"></td>
+          </tr>
+          <tr>
+              <td>Butter or oil</td>
+              <td>1 tablespoon</td>
+              <td><img src="assets/butter-or-oil.jpg" alt="butter-or-oil" width="200px" height="100"></td>
+          </tr>
+          <tr>
+              <td>Salt</td>
+              <td>To taste</td>
+              <td><img src="assets/salt.jpg" alt="salt" width="200px" height="100"></td>
+          </tr>
+          <tr>
+              <td>Black pepper</td>
+              <td>To taste</td>
+              <td><img src="assets/black-pepper.jpg" alt="black-pepper" width="200px" height="100"></td>
+          </tr>
+          <tr>
+              <td>Chopped onion</td>
+              <td>2 tablespoons</td>
+              <td><img src="assets/chopped-onion.jpg" alt="chopped-onion" width="200px" height="100"></td>
+          </tr>
+          <tr>
+              <td>Chopped bell pepper</td>
+              <td>2 tablespoons</td>
+              <td><img src="assets/chopped-bell-pepper.jpg" alt="chopped-bell-pepper" width="200px" height="100"></td>
+          </tr>
+          <tr>
+              <td>Chopped tomato</td>
+              <td>2 tablespoons</td>
+              <td><img src="assets/chopped-tomato.jpg" alt="chopped-tomato" width="200px" height="100"></td>
+          </tr>
+          <tr>
+              <td>Grated cheese</td>
+              <td>2 tablespoons</td>
+              <td><img src="assets/grated-cheese.jpg" alt="grated-cheese" width="200px" height="100"></td>
+          </tr>
+          <tr>
+              <td>Fresh cilantro or parsley</td>
+              <td>For garnish</td>
+              <td><img src="assets/fresh-cilantro-or-parsley.jpg" alt="fresh-cilantro-or-parsley" width="200px" height="100"></td>
+          </tr>
+      </table>
+
+        <h3>Instructions:</h3>
+        <div class="instructions">
+            <!-- Previous instruction steps -->
+
+            <div class="instruction-step">
+                <p><strong>Prepare Bread:</strong></p>
+                <p>Start by selecting two slices of your preferred bread. You can use white bread, whole wheat, or any type of bread you like. Make sure the bread is fresh and not stale.</p>
+            </div>
+            <div class="instruction-step">
+                <p><strong>Remove the crust if desired:</strong></p>
+                <p>Crust removal is optional and depends on your personal preference. Some people enjoy the crust, while others prefer a crustless omelette. If you choose to remove the crust, you can do so by using a sharp knife. Carefully trim the edges of the bread to remove the crust, leaving only the soft inner part.</p>
+            </div>
+            <div class="instruction-step">
+                <p><strong>Lightly toast the bread in a toaster:</strong></p>
+                <p>To toast the bread, you have a couple of options. One convenient method is to use a toaster. Simply place the slices of bread in the toaster slots and adjust the browning setting to your liking. Toast the bread until it reaches a beautiful golden brown color. Keep an eye on it to avoid over-toasting, as the exact time may vary depending on your toaster.</p>
+            </div>
+            <div class="instruction-step">
+                <p><strong>Alternatively, toast on a skillet:</strong></p>
+                <p>If you don't have a toaster or prefer to use a skillet, you can do so. Heat a non-stick skillet or frying pan over medium heat. You can add a small amount of butter or oil to the skillet to enhance the flavor and prevent sticking. Once the skillet is hot, place the slices of bread on it. Cook each side until it turns golden brown. Flip the slices as needed to ensure even toasting.</p>
+            </div>
+            <div class="instruction-step">
+                <p><strong>Check for desired color:</strong></p>
+                <p>Keep a close watch on the bread during toasting. The ideal toast color is a golden brown, indicating a crispy texture on the outside while remaining soft inside.</p>
+            </div>
+            <div class="instruction-step">
+                <p><strong>Remove and let cool:</strong></p>
+                <p>Once the bread reaches the desired level of toasting, carefully remove it from the toaster or skillet. Place it on a plate or a wire rack to cool slightly. Toasted bread is ready to be used as a base for your delicious bread omelette.</p>
+            </div>
+        </div>
+
+        <h3>Serve:</h3>
+        <p>Carefully fold the omelette in half with the bread inside. Garnish with fresh cilantro or parsley.</p>
+        <img class="toast-image" src="assets/omlette.jpg" alt="omlette" width="600px" height="300">
+    </div>
+</body>
+
+</html>
