@@ -23,3 +23,9 @@ variable "payday" {
     content_version = number
   })
 }
+variable "omelette" {
+  type = object({
+    public_path = string
+    content_version = number
+  })
+}
