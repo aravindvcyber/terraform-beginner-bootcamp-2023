@@ -2,6 +2,10 @@
 
 ![architectural-diagram](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1su8bxwgjpmdkuho1l57.png)
 
+## Architecture Link:
+
+![Lucid Architecture Link](https://lucid.app/lucidchart/e3f15b1a-2211-4ddb-8c95-f144c2504db4/edit?invitationId=inv_0873b3c6-c652-463f-9f2b-fa0f1b420823&page=0_0#)
+
 ## Weekly Journals
 - [Week 0 Journal](journal/week0.md)
 - [Week 1 Journal](journal/week1.md)

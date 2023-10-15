@@ -1,5 +1,7 @@
 # Terraform Beginner Bootcamp 2023 - Week 1
 
+![week-1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lk6sgv61c0nnbetkl5m6.png)
+
 ## Root Module Structure
 
 Our root module structure is as follows:
